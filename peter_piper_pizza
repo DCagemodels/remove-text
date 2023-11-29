@@ -1,0 +1,15 @@
+import sys
+
+def remove_pizza(peter_piper_pizza_list):
+    # Remove all occurrences of 'goose' from the list
+    clean_list = [food for food in peter_piper_pizza_list if food != "pizza"]
+    return clean_list
+
+if __name__ == "__main__":
+    # Fetching the list from the command line argument
+    peter_piper_pizza_list = sys.argv[1:]
+
+    # Calling the function to remove 'goose' from the list
+    results_list = remove_pizza(peter_piper_pizza_list)
+
+    print(results_list)
